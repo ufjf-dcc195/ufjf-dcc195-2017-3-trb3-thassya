@@ -1,0 +1,12 @@
+<%- contentFor('body') %>
+<h1>Novo Produto</h1>
+
+    <form  method="POST">
+    <div class="form-group">  <input class="form-control" type="text" name="nome" placeholder="Nome"/></div>
+    <div class="form-group">  <input class="form-control" type="text" name="preco_base" placeholder="Valor Base" /></div>
+      <input class="form-control" type="hidden" name="soma_interesses" value="0"/>
+      <input class="form-control" type="hidden" name="preco" value="0"/>
+      <input class="form-control" type="hidden" name="numero_interessados" value="0"/>
+      <button type="submit" class="btn btn-default">Adicionar</button>
+      <button type="reset" class="btn btn-default">Limpar Campos</button>
+    </form>

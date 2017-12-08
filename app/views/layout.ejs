@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TRB 3 - DCC 195</title>
+  <meta name="description" content="Trabalho para disciplina DCC195 da UFJF">
+  <meta name="keywords" content="NodeJS,EJS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+  <header>
+     <nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/index.html">Index</a></li>
+        <li><a href="/sobre.html">Sobre</a></li>
+        <li><a href="/listarProdutos.html">Produtos</a></li>
+        <li><a href="/listarClientes.html">Clientes</a></li>
+
+      </ul>
+     </nav>
+  </header>
+
+   <main>
+        <div class="text-center">
+            <img src="sly.png" class="rounded" alt="Slytherin Pride">
+        </div>
+     <div class="container">
+       <%if(clienteLogado){%>
+         <div class="jumbotron">
+              <h5><img src="marrom.png"> Logado como: <%=clienteLogado.nome%></h5>
+         </div>
+       <%}%>
+
+      <%- body %>
+     </div>
+   </main>
+
+  <footer>
+      <div class="text-center"><img src="oculos.png"></div>
+  </footer>
+</body>
+</html>

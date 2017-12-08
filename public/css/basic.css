@@ -1,0 +1,15 @@
+#tic-tac-toe td, #quadribol td, #quadribol th {
+    font-size: 3em;
+    height: 80px;
+    width: 80px;
+}
+
+
+img.rounded {
+    width: 10%;
+    padding-bottom: 30px;
+}
+
+img {
+  width: 5%;
+}

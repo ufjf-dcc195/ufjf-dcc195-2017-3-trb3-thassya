@@ -1,0 +1,12 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+
+<h1>Menu</h1>
+  <ul class="nav nav-pills nav-fill">
+    <% for(var i in enderecos) {
+        var link = enderecos[i];
+    %>
+      <li class="nav-item"><a  class="nav-link" href="<%=link.link%>"><%=link.url%></a></li>
+    <%}%>
+  </ul>
+</div>
